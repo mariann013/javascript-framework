@@ -1,6 +1,6 @@
 (function(exports) {
-var Note = function() {
-  this.text = "My favourite language is Javascript";
+var Note = function(text) {
+  this.text = text;
 }
 
 Note.prototype.getText = function() {

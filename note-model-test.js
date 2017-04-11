@@ -1,8 +1,9 @@
 (function(exports) {
   function testDefaultNoteToMyFavLanguageIsJS() {
-    var note = new Note();
+    var text = "My favourite language is Javascript";
+    var note = new Note(text);
 
-    if (note.getText() !== "My favourite language is Javascript") {
+    if (note.getText() !== text) {
       throw new Error("Initial note should say my favourite language is Javascript");
     }
   };
