@@ -1,6 +1,6 @@
 (function(exports) {
-  var Notes = function() {
-      this.list = ['', '', ''];
+  var Notes = function(notes) {
+      this.list = notes;
   }
 
   Notes.prototype.getList = function () {
