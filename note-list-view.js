@@ -9,7 +9,7 @@
     if(this.notes) {
       var notes = this.notes.getList();
       for (var i = 0; i < notes.length; i++) {
-        output += "<li><div>" + notes[i] + "</div></li>";
+        output += "<li><div>" + notes[i].getText() + "</div></li>";
       }
     }
 

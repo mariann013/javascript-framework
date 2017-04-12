@@ -9,7 +9,8 @@
   testInnitiatesView();
 
   function testOneNoteDisplays() {
-    var notes = new Notes(['notey']);
+    var note = new Note('notey');
+    var notes = new Notes([note]);
     var view = new View(notes);
 
     if (view.getNotes() !== "<ul><li><div>notey</div></li></ul>") {
@@ -19,7 +20,9 @@
   testOneNoteDisplays();
 
   function testTwoNoteDisplays() {
-    var notes = new Notes(['notey', 'notey2']);
+    var note = new Note('notey'),
+        note2 = new Note('notey2');
+    var notes = new Notes([note, note2]);
     var view = new View(notes);
 
     if (view.getNotes() !== "<ul><li><div>notey</div></li><li><div>notey2</div></li></ul>") {
